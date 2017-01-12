@@ -1,0 +1,73 @@
+@import 'setup';
+body{
+	background: url('http://unsplash.it/1200/1200/?random') center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    height:100vh;
+    display:flex;
+    
+    flex-wrap:wrap;
+    justify-content:center;
+}
+h1{
+	text-align:center;
+}
+.container {
+	height:80vh;
+	max-width: 1200px;
+	margin: 0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:space-between;
+}
+.card{
+	background: linear-gradient(45deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55));
+	padding:25px;
+	width:23%;
+	margin-bottom: 20px;
+	color:white;
+	border-radius:5px;
+}
+#todoItem{
+	p{
+		display:inline;
+	}
+}
+#todoItem{
+	margin-bottom:10px;
+}
+.addItem{
+	border-radius:5px;
+	overflow:hidden;
+	width:100%;
+	display:flex;
+	input[type=text]{
+		width:80%;
+	}
+	button{
+		width:20%;
+	}
+}
+.clearAll{
+	display:flex;
+	max-width:1200px;
+	width:100%;
+	justify-content:flex-end;
+	align-items:flex-start;
+	margin:0 auto;
+	margin-bottom:20px;
+	button{
+		background: rgba(255,255,255,0.6);
+		color:black;
+		border:none;
+		padding:10px 40px;
+		transition: all .3s ease;
+		border: 2px solid ;
+		border-radius:5px;
+		&:hover{
+			color:#b00;
+			border: 2px solid #b00;
+		}
+	}
+}
