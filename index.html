@@ -8,108 +8,78 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-	<h1><input type="text">'s To-do List</h1>
+	<h1><!-- <input type="text"   > -->My To-do List</h1>
 	<div class="container">
-		<div class="card mon clearfix">
+		<div class="card Monday clearfix">
 			<h2 id="date">Monday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text" placeholder="Feed the cat">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>	
 			</div>
 		</div>
-		<div class="card tues clearfix">
+		<div class="card Tuesday clearfix">
 			<h2 id="date">Tuesday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
-		<div class="card wed clearfix">
+		<div class="card Wednesday clearfix">
 			<h2 id="date">Wednesday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
-		<div class="card thurs clearfix">
+		<div class="card Thursday clearfix">
 			<h2 id="date">Thursday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
-		<div class="card fri clearfix">
+		<div class="card Friday clearfix">
 			<h2 id="date">Friday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
-		<div class="card sat clearfix">
+		<div class="card Saturday clearfix">
 			<h2 id="date">Saturday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
-		<div class="card sun clearfix">
+		<div class="card Sunday clearfix">
 			<h2 id="date">Sunday</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
-			<div class="card someday clearfix">
-			<h2 id="date">Someday..</h2>
-			<!-- <button>+ ADD</button> -->
-			<div id="todoItem">
-				<input type="checkbox">
-				<p>dkdkk</p>	
-			</div>
+		<div class="card Someday clearfix">
+			<h2 id="date">Someday</h2>
 			<div class="addItem">
-				<input type="text">
-				<button>add</button>
+				<input type="text" placeholder="Feed the cat" class="item">
+				<button class="add">add</button>
 			</div>
 		</div>
 	</div>
-	<div class="clearAll">
-		<button>Clear All</button>
+	<div class="bottom">
+		<label for="card">Card Color</label>
+    	<input type="color" name="card" value="#da0938">
+    	<label for="base">Font Color</label>
+    	<input type="color" name="font" value="#da0938">
+		<button class="clearAll">Clear All</button>
 	</div>
+	
+	<footer> 
+		<p>Photos from <a href="http://unsplash.it">Unsplash</a></p>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="public/scripts/main.js"></script>
 	
 </body>

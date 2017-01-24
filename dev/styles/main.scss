@@ -1,16 +1,19 @@
 @import 'setup';
+:root {
+  --card:linear-gradient(45deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55));
+}
 body{
 	background: url('http://unsplash.it/1200/1200/?random') center;
 	background-size: cover;
 	background-repeat: no-repeat;
     height:100vh;
     display:flex;
-    
     flex-wrap:wrap;
     justify-content:center;
 }
 h1{
 	text-align:center;
+	display:block;
 }
 .container {
 	height:80vh;
@@ -22,14 +25,15 @@ h1{
 	align-items:space-between;
 }
 .card{
-	background: linear-gradient(45deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55));
+	background:var(--card);
+	//background: linear-gradient(45deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55));
 	padding:25px;
 	width:23%;
 	margin-bottom: 20px;
 	color:white;
 	border-radius:5px;
 }
-#todoItem{
+.card{
 	p{
 		display:inline;
 	}
@@ -49,7 +53,7 @@ h1{
 		width:20%;
 	}
 }
-.clearAll{
+.bottom{
 	display:flex;
 	max-width:1200px;
 	width:100%;
@@ -70,4 +74,8 @@ h1{
 			border: 2px solid #b00;
 		}
 	}
+}
+footer{
+	display:block;
+	width:100%;
 }
